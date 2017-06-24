@@ -1,0 +1,18 @@
+<div class="login-container">
+  <div class="login-content-logo">
+    <!-- <img src="assets/images/logo.png" alt="CheezBallz" class="login-logo" />-->
+    <div class="login-logo"></div>
+  </div>
+  <div class="login-horizental">
+  </div>
+  <div class="login-content-userlogin">
+    <div class="login-subcontent-userlogin">
+      <form [formGroup]="loginForm" (ngSubmit)="doLogin(loginForm)">
+        <input formControlName="username" type="text" placeholder="Email" class="login-txt" required>
+        <input formControlName="password" type="password" placeholder="Password" class="login-txt" required>
+        <button type="submit" class="login-loginbtn">Log in</button>
+        <a routerLink='/signup' routerLinkActive='active' class="login-signuplink" >Sign up</a>
+      </form>
+    </div>
+  </div>
+</div>

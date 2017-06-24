@@ -1,0 +1,20 @@
+<div class="signup-container">
+  <div class="signup-content-logo">
+    <!-- <img src="assets/images/logo.png" alt="CheezBallz" class="login-logo" />-->
+    <div class="signup-logo"></div>
+  </div>
+  <div class="signup-horizental">
+  </div>
+  <div class="signup-content-usersignup">
+    <div class="signup-subcontent-usersignup">
+      <form [formGroup]="signupForm" (ngSubmit)="doSignup(signupForm)">
+        <input formControlName="username" type="text" placeholder="Email" class="signup-txt" required>
+        <input formControlName="password" type="password" placeholder="Password" class="signup-txt" required>
+        <input formControlName="firstname" type="text" placeholder="Firstname" class="signup-txt" required>
+        <input formControlName="lastname" type="text" placeholder="Lastname" class="signup-txt" required>
+        <input formControlName="tel" type="text" placeholder="Telephone" class="signup-txt" required>
+        <button type="submit" class="signup-signupbtn">Sign up</button>
+      </form>
+    </div>
+  </div>
+</div>

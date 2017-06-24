@@ -1,0 +1,22 @@
+<div class="upload-container">
+  <div class="upload-content-logo">
+    <!-- <img src="assets/images/logo.png" alt="CheezBallz" class="login-logo" />-->
+    <div class="upload-logo"></div>
+  </div>
+  <div class="upload-horizental">
+  </div>
+  <div class="upload-content-userUpload">
+    <div class="upload-subcontent-userUpload">
+    <!-- <form [formGroup]="imageURLForm" (ngSubmit)="doGetImageURL(imageURLForm)">-->
+        <img class="upload-Imagefile" [hidden]="url==null" [src]="url">
+        <input type="file" class="upload-uploadImagefile" #uploadImagefile (change)="readUrl($event)"/>
+        <button type="submit" class="upload-uploadImagebtn"  (click)="uploadImagefile.click()">Select Image</button>
+    <!-- </form> -->
+    <form [formGroup]="uploadImageForm" (ngSubmit)="doUpload(uploadImageForm)">
+        <input formControlName="location" type="text" placeholder="Location" class="upload-txt" >
+        <input formControlName="detail" type="text" placeholder="License plate" class="upload-txt" >
+        <button type="submit" class="upload-sendbtn">Send</button>
+      </form>
+    </div>
+  </div>
+</div>

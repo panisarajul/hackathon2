@@ -1,0 +1,124 @@
+.home-container{
+    background-color: #281500;
+    padding: 0;
+    margin: 0;
+    color: #2b2b29;
+    clear: both;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.home-content-logo{
+    width: 49%;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+    .home-logo{
+        background: url(assets/images/logo.png) no-repeat;
+        background-size: contain;
+        height: 100px;
+        width: 60%;
+        top: 50%;
+        left: 60%;
+        position: absolute;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+.home-horizental{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 2%;
+    border-left: 1px solid #AFAFAF;
+    height: 250px;
+}
+
+.home-content-userhome{
+    width: 49%;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+
+.home-btn{
+    background-color:#FEBE12;
+    display: block;
+    line-height: 50px;
+    width: 240px;
+    margin: 20px 10px;
+    padding: 0px 10px;
+    color: #FFFFFF;
+    border:none;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-device-width: 740px) 
+ {
+    .home-content-logo{
+        width: 100%;
+        display: block;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        text-align: center;
+
+        .home-logo{
+            background: url(assets/images/logo2.png) no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+            top: 25%;
+            left: 50%;
+            right: 50%;
+            position: fixed;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .home-horizental{
+        display:none;
+    }
+
+    .home-content-userhome{
+        width: 100%;
+        display: inline-block;
+        position: fixed;
+        top: 55%;
+        left:50%;
+        text-align: -webkit-center;
+    }
+
+    .home-btn{
+        background-color:#FEBE12;
+        display: block;
+        line-height: 50px;
+        width: 240px;
+        margin: 20px 10px;
+        padding: 0px 10px;
+        color: #FFFFFF;
+        border:none;
+        font-size: 14px;
+    }
+ }
